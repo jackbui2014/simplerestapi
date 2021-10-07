@@ -1,0 +1,44 @@
+{
+  "name": "myrestapi",
+  "version": "1.0.0",
+  "description": "simple rest api",
+  "main": "app.js",
+  "scripts": {
+    "start": "DEBUG=app,app:* nodemon app.js",
+    "debug": "DEBUG=* nodemon app.js",
+    "lint": "eslint .",
+    "test": "mocha src/tests/**/*Tests.js"
+  },
+  "author": "Jack",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "debug": "^4.3.2",
+    "express": "^4.17.1",
+    "mongoose": "^6.0.8",
+    "nodemon": "^2.0.13"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.26.1",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "mocha": "^9.1.2",
+    "should": "^13.2.3",
+    "sinon": "^11.1.2",
+    "supertest": "^6.1.6"
+  },
+  "nodemonConfig": {
+    "restartable": "rs",
+    "ignore": [
+      "node_modules/**/node_modules"
+    ],
+    "delay": 2500,
+    "env": {
+      "NODE_ENV": "development",
+      "PORT": 4000
+    }
+  }
+}
