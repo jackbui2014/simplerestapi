@@ -6,4 +6,5 @@ timeline
          : Google
     2005 : YouTube
     2006 : Twitter
+    2024 : OpenAI
 ```
