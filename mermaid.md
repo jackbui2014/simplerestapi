@@ -1,5 +1,8 @@
 ```mermaid
 graph LR
-  A --> B
-  B --> C
+  User --> WebApp
+  WebApp --> API
+  API --> DB[(Database)]
+  API --> Payments
+  API --> Auth
 ```
